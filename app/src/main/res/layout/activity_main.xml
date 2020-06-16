@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="25dp"
+        app:columnCount="2"
+        app:columnOrderPreserved="false"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/button1"
+            android:tag="fichas"
+            android:layout_width="172dp"
+            android:layout_height="120dp"
+            android:text="Fichas"
+            app:layout_column="0"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:tag="puerta"
+            android:layout_width="172dp"
+            android:layout_height="120dp"
+            android:text="Puerta"
+            app:layout_column="1"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:tag="carrito"
+            android:layout_width="172dp"
+            android:layout_height="120dp"
+            android:text="carrito"
+            app:layout_column="0"
+            app:layout_row="1"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:tag="claxon"
+            android:layout_width="172dp"
+            android:layout_height="120dp"
+            android:text="claxon"
+            app:layout_column="1"
+            app:layout_row="1"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:tag="hielo"
+            android:layout_width="172dp"
+            android:layout_height="120dp"
+            android:text="hielo"
+            app:layout_column="0"
+            app:layout_row="2"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:tag="pajaros"
+            android:layout_width="172dp"
+            android:layout_height="120dp"
+            android:text="pajaros"
+            app:layout_column="1"
+            app:layout_row="2"
+            android:onClick="play"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:tag="stich"
+            android:layout_width="172dp"
+            android:layout_height="120dp"
+            android:text="stich"
+            app:layout_column="0"
+            app:layout_row="3"
+            android:onClick="play"
+            />
+
+        <Button
+            android:id="@+id/button8"
+            android:tag="escoba"
+            android:layout_width="172dp"
+            android:layout_height="120dp"
+            android:text="escoba"
+            app:layout_column="1"
+            app:layout_row="3"
+            android:onClick="play"/>
+
+    </android.support.v7.widget.GridLayout>
+</android.support.constraint.ConstraintLayout>
